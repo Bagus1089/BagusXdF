@@ -33,7 +33,7 @@ const konekinWhatsApp = async () => {
     const sock = WASocket({
         logger: Pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Fiibot','Safari','1.0.0'],
+        browser: ['Bagus','Safari','1.0.0'],
         auth: state,
         version: getVersionWaweb() || [2, 2204, 13]        
     })
@@ -79,7 +79,7 @@ const konekinWhatsApp = async () => {
         lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut 
         ? konekinWhatsApp() : console.log('Fiibot disconnected')
         }
-        console.log('Fiibot is connected', update)
+        console.log('BagusXd is connected', update)
         })
         sock.ev.on ('creds.update', () =>  saveCreds)
 
